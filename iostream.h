@@ -7,6 +7,7 @@
 #include <set>
 #include <map>
 #include <string>
+#include <utility>
 
 #ifndef THRESHOLD
 #define THRESHOLD 10
@@ -198,6 +199,12 @@ inline std::ostream& operator <<(std::ostream& os, const std::multimap<K,T>& mm)
 	return os;
 }
 
+template<class T, class K>
+inline std::ostream& operator<< (std::ostream&os, const std::pair<T,K> & pair) {
+	os << "(" << pair.first << "," << pair.second << ")";
+	return os;
+}
+
 /**
  * Input
  */
@@ -285,3 +292,5 @@ inline std::istream& operator >>(std::istream& is, std::multimap<K,T>& mm) {
 	mm.insert(make_pair(new_key,new_item));
 	return is;
 }
+
+
