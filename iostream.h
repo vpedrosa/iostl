@@ -1,3 +1,9 @@
+/**
+ * Valentín Pedrosa Campoy
+ * Under MIT License: https://github.com/vpedrosa/iostl/blob/master/LICENSE
+ * Github: https://github.com/vpedrosa/iostl
+ */
+
 #include <iostream>
 #include <vector>
 #include <list>
